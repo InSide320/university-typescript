@@ -1,6 +1,12 @@
 // Your custom Reduce
 const reduce = (arr, fn, initialValue) => {
-    // Your implementation
+  for (let variable in arr) {
+    initialValue = fn(initialValue, arr[variable]);
+
+    console.log(initialValue, arr[variable], variable, arr, initialValue);
+  }
+
+  return initialValue;
 };
 
 // Inputs
