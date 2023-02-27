@@ -20,12 +20,9 @@ console.log(sum);
 const sum02 = reduce(arr, sum, initialValue); // Custom Reduce
 
 // Logging
-console.log({ sum01, sum02 });
+console.log({sum01, sum02});
 
 // Assertions
-console.assert(sum01 === sum02, "Sum01 does not match Sum02");
-console.assert(
-  JSON.stringify(arr) === JSON.stringify([1, 2, 3, 4]),
-  "Array should not be mutated"
-);
-console.assert(initialValue === 0, "Initial value should not be mutated");
+console.assert(sum01 === sum02, 'Sum01 does not match Sum02');
+console.assert(JSON.stringify(arr) === JSON.stringify([1, 2, 3, 4]), 'Array should not be mutated');
+console.assert(initialValue === 0, 'Initial value should not be mutated');
